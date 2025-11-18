@@ -1,0 +1,9 @@
+Once you have installed Linux Ubuntu, the first thing you should do is update and upgrade the system and remove any old kernels and header files. This will update your system. 
+
+Developers often work on things individually and don't always have time to update the ISO file before releasing it to the public. The commands you need to run are:
+
+Sudo apt-get update
+Sudo apt-get upgrade
+Sudo apt purge --autoremove.
+
+This process takes some time, so please be patient.
