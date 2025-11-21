@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build Essential Tools</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -17,15 +17,17 @@
                 <h1>My Linux Notes</h1>
             </header>
             <main class="main-content">
-                <h2>Build Essential Tools</h2>
-                <p>&nbsp;<br></p>
-                <p>This page explains how to install the Build Essential Tools, which allow us to compile C/C++ programs and install programs from source code alone.</p>
-                <p>One of the following commands can be used to install the tools </p>
-                <br>
+                <h2>Microsoft Visual Code Text Editor</h2>
+                <p>&nbsp;</p>
+                <p>We are now going to download and install a new text editor from Microsoft. This editor is well-regarded among programmers and developers.</p>
+                <p>Although it can be installed from the Ubuntu Software repository using Snap, I find that installing it manually ensures you have the latest version.</p>
+                <p>Open your preferred browser and go to the <a href="https://code.visualstudio.com/Download">Microsoft Visual Studio Code website</a>. You need the Debian-Ubuntu .deb file. Save the file to your machine and rename it 'code.deb'.</p>
+                <p>Open the Terminal application and enter the following command. Then, follow the on-screen instructions.</p>
                 <code>
-                    sudo apt install build-essential dkms<br>
-                    sudo apt install linux-headers-$(uname -r) build-essential dkms
+                    sudo dpkg -i code.deb<br>
                 </code>
+                <br>
+                <p>You now have access to a cutting-edge text editor offering the ability to install a wide range of extensions for various programming languages.</p>
 
                 <p>&nbsp;</p>
 
@@ -33,7 +35,7 @@
                 <div class="buttons">
                     <button type="button" class="btn btn-primary"><a class="nav-link active" aria-current="page"
                             href="index.html">Home</a> </button>
-                    <button type="button" class="btn btn-warning"><a class="nav-link" href="ssh-server.html">Prev</a></button>
+                    <button type="button" class="btn btn-warning"><a class="nav-link" href="#">Prev</a></button>
                     <button type="button" class="btn btn-danger"><a class="nav-link" href="#">Next</a></button>
                 </div>
 
@@ -42,7 +44,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </section>
             <aside class="right-sidebar">
