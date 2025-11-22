@@ -1,79 +1,97 @@
-/* Custom Styles */
-.scripts {
-    background-color: #e77f57;
-}
-
-header {
-    background-color: #e95922;
-}
-
-header h1 {
-    text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font: 14px Arial, sans-serif;
-    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background: linear-gradient(#ffdad5, #fff7f9);
 }
 
-.header {
-    padding: 10px 20px;
-    background: #e95922;
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-items: space-evenly;
+    /* align-self: center; */
 }
 
-.header h1 {
-    font-size: 24px;
-    text-align: center;
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
 }
 
-.container {
-    width: 100%;
-    background: #f2f2f2;
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
 }
 
-.nav,
-.section {
-    float: left;
-    padding: 20px;
-    min-height: 170px;
-    box-sizing: border-box;
-}
-.aside {
-    float: right;
-    padding: 20px;
-    min-height: 170px;
-    box-sizing: border-box;
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-.nav, .aside {
-    width: 20%;
-    background: #e77f57;
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
 }
 
-.section {
-    width: 80%;
+.contact-left textarea {
+    height: 150px;
+    padding-top: 15px;
+    border-radius: 20px;
 }
 
-.nav ul {
-    list-style: none;
-    line-height: 24px;
-    padding: 0px;
+.contact-inputs:focus {
+    border: 2px solid #ff994f;
 }
 
-.nav ul li a {
-    color: #333;
+.contact-inputs::placeholder {
+    color: #a9a9a9;
 }
 
-.clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
 }
 
-.footer {
-    background: #e95922;
-    text-align: center;
-    padding: 5px;
+.contact-left button img {
+    height: 15px;
+}
+
+.contact-right img {
+    width: 500px;
+}
+
+@media (max-width: 800px) {
+    .contact-inputs {
+        max-width: 80vw;
+    }
+    .contact-right {
+        display: none;
+    }
 }
