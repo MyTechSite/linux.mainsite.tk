@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="holy-grail-grid">
+            <header class="header">
+                <h1>My Linux Notes</h1>
+            </header>
+            <main class="main-content">
+                <p>Use this form to get in touch with me with your suggestions on how to make this site more useful for beginners:</p>
+                <p>&nbsp;</p>
+                <form id="contact-form" action="https://formsubmit.co/7a903e05c06d9acd2fee7af9417797ff" method="POST">
+                    
+                    <h2>Contact us</h2>
+
+                    <!-- Name input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="text" id="name" name="name" class="form-control" />
+                        <label class="form-label" for="name">Name</label>
+                    </div>
+
+                    <!-- Email input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="email" id="email" name="email" class="form-control" />
+                        <label class="form-label" for="email">Email address</label>
+                    </div>
+
+                    <!-- Subject input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="text" id="subject" name="subject" class="form-control" />
+                        <label class="form-label" for="subject">Subject</label>
+                    </div>
+
+                    <!-- Message input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+                        <label class="form-label" for="message">Message</label>
+                    </div>
+                    <div class="h-captcha" data-sitekey="01180514-54ca-4e9c-b34c-634a12d4053c"></div>
+
+
+                    <!-- Submit button -->
+                    <button data-mdb-button-init id="submit-form" type="submit" data-mdb-ripple-init
+                        class="btn btn-primary btn-block mb-4">
+                        Send
+                    </button>
+                    <input type="hidden" name="_next" value="http://localhost:5000/thanks.html">
+                </form>
+                <p>&nbsp;</p>
+
+
+                <div class="buttons">
+                    <button type="button" class="btn btn-primary"><a class="nav-link active" aria-current="page"
+                            href="index.html">Home</a> </button>
+                    <!-- <button type="button" class="btn btn-warning"><a class="nav-link" href="#">Prev</a></button>
+                    <button type="button" class="btn btn-danger"><a class="nav-link" href="#">Next</a></button> -->
+                </div>
+
+            </main>
+            <section class="left-sidebar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </section>
+            <aside class="right-sidebar">
+                <p>&nbsp;</p>
+            </aside>
+            <footer class="footer">
+                <p>copyright &copy; Linux.Mainsite.tk<br>
+                    Contact: <a
+                        href="mailto:linux-notes@mainsite.tk?&subject=Comments re: your linux website&body=Add what you want to suggest">Linux-Notes@mainsite.tk</a>
+                </p>
+            </footer>
+        </div>
+    </div>
+    <script></script>
+</body>
+
+</html>
